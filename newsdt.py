@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env
 import psycopg2
 
 # Queries to execute
