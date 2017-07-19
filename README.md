@@ -28,4 +28,8 @@ The database includes three tables:
 - Articles table
 - Log table
 
+<<<<<<< HEAD
 To execute the program, run `python3 newsdt.py` from the command line.
+=======
+To execute the program, run `python3 newsdt.py` from the command line.
+>>>>>>> e583ee1affd0e28ef6cb58f92241e1635c0f8538
