@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import psycopg2
 
 # Queries to execute
@@ -39,14 +40,15 @@ def connect(database_name="news"):
         return db, cursor
     except:
         print ("Unable to connect to the database")
+        sys.exit(1)
 
 
 def get_query_results(query):
     """Return query results"""
     db, cursor = connect()
     cursor.execute(query)
-    return cursor.fetchall()
     db.close()
+    return cursor.fetchall()
 
 
 def print_query_results(query_results):
